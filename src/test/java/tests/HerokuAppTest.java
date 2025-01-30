@@ -11,7 +11,6 @@ public class HerokuAppTest {
 // Source code recreated from a .class file by IntelliJ IDEA
 // (powered by FernFlower decompiler)
 //
-
         @Test
         public void fillUserandPasswor() {
             System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver");
