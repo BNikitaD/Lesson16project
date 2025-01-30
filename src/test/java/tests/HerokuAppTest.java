@@ -21,6 +21,7 @@ public class HerokuAppTest {
             driver.findElement(By.name("password")).sendKeys(new CharSequence[]{"SuperSecretPassword!"});
             driver.findElement(By.xpath("//*[@type=\"submit\"]")).click();
             String expectedResult = "Welcome to the Secure Area. When you are done click logout below.";
+
             String actualResult = driver.findElement(By.xpath("//*[@class=\"subheader\"]")).getText();
             Assert.assertEquals(expectedResult, actualResult);
         }
